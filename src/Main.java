@@ -19,11 +19,19 @@ public class Main {
         }
 
         int year = 2022;
-
         if (year % 100 == year % 400 && year % 4 == 0) {
             System.out.println( "год " + year + "  является високосным");
         } else {
             System.out.println( "год " + year + " не является високосным");
+        }
+
+        var kilometers = 100;
+        var delay = kilometers - 20;
+        var delivery = delay / 40;
+        if (kilometers < 20){
+            System.out.println("delivery will take one day");
+        } else {
+            System.out.println("Потребуется дней: " + delivery);
         }
 
     }
